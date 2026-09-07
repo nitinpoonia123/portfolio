@@ -107,7 +107,7 @@ if (reducedMotion.matches || !('IntersectionObserver' in window)) {
 
 const photo = document.querySelector('#profile-photo');
 photo.addEventListener('error', () => {
-  if (!photo.src.endsWith('profile-placeholder.svg')) photo.src = 'assets/profile-placeholder.svg';
+  if (!photo.src.endsWith('profile-placeholder.svg')) photo.src = 'profile-placeholder.svg';
 }, { once: true });
 
 document.querySelector('#year').textContent = new Date().getFullYear();
